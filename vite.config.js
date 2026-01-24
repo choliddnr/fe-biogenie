@@ -1,18 +1,29 @@
-const path = require('path')
+import { resolve } from 'path'
 
 export default {
-  root: path.resolve(__dirname, 'src'),
-  publicDir: '../public', // This tells Vite the public folder is one level up
+  root: resolve(__dirname, 'src'),
+  publicDir: '../public',
+
+  base: './',
+
   build: {
     outDir: '../dist',
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'src/index.html'),
+        about: resolve(__dirname, 'src/about.html'),
+      },
+    },
   },
+
   resolve: {
     alias: {
-      '~bootstrap': path.resolve(__dirname, 'node_modules/bootstrap'),
-    }
+      '~bootstrap': resolve(__dirname, 'node_modules/bootstrap'),
+    },
   },
+
   server: {
     port: 8080,
-    hot: true
-  }
+  },
 }
