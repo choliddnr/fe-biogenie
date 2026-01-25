@@ -4,27 +4,20 @@ import 'bootstrap'
 import Swiper from 'swiper/bundle';
 // import Swiper JS
 
-// const swiper = new Swiper('.swiper', {
-//     // Optional parameters
-//     direction: 'horizontal',
-//     loop: true,
+const swiperHero = new Swiper('.swiper-hero', {
+    direction: 'horizontal',
+    loop: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination-hero',
+        clickable: true,
+    },
 
-//     // If we need pagination
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
-
-//     // Navigation arrows
-//     navigation: {
-//         nextEl: '.swiper-button-next',
-//         prevEl: '.swiper-button-prev',
-//     },
-
-//     // And if we need scrollbar
-//     scrollbar: {
-//         el: '.swiper-scrollbar',
-//     },
-// });
+ 
+});
 
 const swiperCertification = new Swiper('.swiper-certification', {
     loop: true,
@@ -38,10 +31,7 @@ const swiperCertification = new Swiper('.swiper-certification', {
         el: '.swiper-pagination-certification',
         clickable: true,
     },
-    navigation: {
-        nextEl: '.swiper-button-next-certification',
-        prevEl: '.swiper-button-prev-certification',
-    },
+
     breakpoints: {
         768: {
             slidesPerView: 2,
@@ -61,13 +51,10 @@ const swiperPartners = new Swiper('.swiper-partners', {
         disableOnInteraction: false,
     },
     pagination: {
-        el: '.swiper-pagination-certification',
+        el: '.swiper-pagination-partners',
         clickable: true,
     },
-    navigation: {
-        nextEl: '.swiper-button-next-certification',
-        prevEl: '.swiper-button-prev-certification',
-    },
+
     breakpoints: {
         576: {
             slidesPerView: 3,
@@ -118,13 +105,10 @@ const swiperAboutusMissions = new Swiper('.swiper-aboutus-missions', {
         disableOnInteraction: false,
     },
     pagination: {
-        el: '.swiper-pagination-certification',
+        el: '.swiper-pagination-aboutus-missions',
         clickable: true,
     },
-    navigation: {
-        nextEl: '.swiper-button-next-certification',
-        prevEl: '.swiper-button-prev-certification',
-    },
+
     breakpoints: {
         768: {
             slidesPerView: 2,
