@@ -1,4 +1,4 @@
-import '../scss/style.scss'
+import './style.css'
 // Import all of Bootstrap's JS
 import 'bootstrap'
 import Swiper from 'swiper/bundle';

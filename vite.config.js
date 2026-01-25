@@ -1,18 +1,20 @@
+
 import { resolve } from 'path'
+import { defineConfig } from 'vite'
 
-export default {
-  root: resolve(__dirname, 'src'),
-  publicDir: '../public',
+export default defineConfig({
+ //   root: resolve(__dirname, 'src'),
+//   publicDir: '../public',
 
-  base: './',
+//   base: './',
 
   build: {
-    outDir: '../dist',
+    outDir: './dist',
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'src/index.html'),
-        about: resolve(__dirname, 'src/about.html'),
+        main: resolve(__dirname, 'index.html'),
+        about: resolve(__dirname, 'aboutus.html'),
       },
     },
   },
@@ -22,8 +24,7 @@ export default {
       '~bootstrap': resolve(__dirname, 'node_modules/bootstrap'),
     },
   },
-
-  server: {
-    port: 8080,
-  },
-}
+//   server: {
+//     port: 8080,
+//   },
+})
