@@ -4,27 +4,27 @@ import 'bootstrap'
 import Swiper from 'swiper/bundle';
 // import Swiper JS
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: true,
 
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
+//     // If we need pagination
+//     pagination: {
+//         el: '.swiper-pagination',
+//     },
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
 
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-});
+//     // And if we need scrollbar
+//     scrollbar: {
+//         el: '.swiper-scrollbar',
+//     },
+// });
 
 const swiperCertification = new Swiper('.swiper-certification', {
     loop: true,
@@ -51,6 +51,7 @@ const swiperCertification = new Swiper('.swiper-certification', {
         },
     },
 });
+
 const swiperPartners = new Swiper('.swiper-partners', {
     loop: true,
     slidesPerView: 2,
@@ -107,3 +108,56 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+const swiperAboutusMissions = new Swiper('.swiper-aboutus-missions', {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination-certification',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next-certification',
+        prevEl: '.swiper-button-prev-certification',
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+        },
+        1080: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+
+const logo = document.getElementById('logo');
+const scrollThreshold = 50; 
+
+const handleScroll = () => {
+    if (window.scrollY <= scrollThreshold) {
+        logo.classList.add('ontop');
+    } else {
+        logo.classList.remove('ontop');
+    } 
+}
+
+if(window.innerWidth > 768) {
+    let ticking = false;
+    window.addEventListener('scroll', function() {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                handleScroll();
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+    
+    handleScroll();
+}
