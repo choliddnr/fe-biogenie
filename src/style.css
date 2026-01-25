@@ -265,8 +265,8 @@ footer {
     display: inline-flex;
     width: 35px;
     height: 35px;
-    background: var(--dark-green);
-    color: var(--light-green);
+    background: #47b24e;
+    color: #c0ff4e;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
