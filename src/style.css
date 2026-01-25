@@ -1,6 +1,6 @@
  /* Import all of Bootstrap's CSS */
 /* @import "~bootstrap/scss/bootstrap"; */
-
+@import url('https://fonts.cdnfonts.com/css/century-gothic-paneuropean');
 @import "~bootstrap/dist/css/bootstrap.min.css";
 /* Swiper CSS */
 @import 'swiper/swiper-bundle.css';
@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Century Gothic Paneuropean', sans-serif;
     color: #555;
 }
 
@@ -25,7 +25,13 @@ h2,
 h3,
 h4 {
     color: var(--dark-green);
-    font-weight: 700;
+    font-weight: 600;
+    
+}
+h4, p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .text-primary-green {
@@ -234,6 +240,7 @@ footer {
     color: #666;
     display: block;
     margin-bottom: 8px;
+    font-size: 1rem;
 }
 
 .footer-links li a:hover {
@@ -405,7 +412,6 @@ footer {
 }
 
 .mission-text {
-    font-size: 2rem;
     color: #707070;
     max-width: 900px;
     margin: 0 auto;
