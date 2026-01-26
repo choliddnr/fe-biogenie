@@ -383,10 +383,11 @@ footer {
 }
 
 .mission-text {
-    color: #707070;
+    color: #4d4d4d;
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.6;
+    font-size: 1.4rem;
 }
 
 /* Partners */
