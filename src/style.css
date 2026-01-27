@@ -203,7 +203,6 @@ h4, p {
 }
 
 
-
 .swiper-caption {
     margin-top: 15px;
     font-size: 1.2rem;
@@ -352,6 +351,9 @@ footer {
 }
 
 /* Certification */
+#certification .swiper {
+    min-height: 356px;
+}
 .cert-card {
     border: 2px solid #eee;
     height: 100%;
