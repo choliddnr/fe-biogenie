@@ -12,11 +12,13 @@
     --bg-light: #f4f9f1;
     /* Section background */
     --light-green: #e7f2df;
+
+    --text-gray: #7f7f7f;
 }
 
 body {
     font-family: 'Century Gothic Paneuropean', sans-serif;
-    color: #555;
+    color: var(--text-gray);
 }
 
 h1,
@@ -31,6 +33,7 @@ h4, p {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: 1px;
+    color: var(--text-gray);
 }
 
 .text-primary-green {
@@ -87,7 +90,7 @@ h4, p {
     top: -35px;
 }
 .nav-link {
-    color: #555;
+    color: var(--text-gray);
     font-weight: 500;
     font-size: 14px;
 }
@@ -100,7 +103,7 @@ h4, p {
 .dropdown-item {
     font-size: 14px;
     padding: 10px 20px;
-    color: #44566c;
+    color: var(--text-gray);
 }
 
 .dropdown-item:hover {
@@ -240,7 +243,7 @@ footer {
 }
 
 .footer-title {
-    color: #333;
+    color: var(--text-gray);
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -252,7 +255,7 @@ footer {
 
 .footer-links li a {
     text-decoration: none;
-    color: #666;
+    color: var(--text-gray);
     display: block;
     margin-bottom: 8px;
     font-size: .9rem;
@@ -384,7 +387,7 @@ footer {
 }
 
 .mission-text {
-    color: #4d4d4d;
+    color: var(--text-gray);
     max-width: 900px;
     margin: 0 auto;
     line-height: 1.6;
@@ -457,3 +460,17 @@ footer {
 
 
 
+/* Product Page */
+/* tr {
+    border-bottom: 1px solid #eee;
+    padding: 300px 0;
+}
+*/
+th, td {
+    padding: 18px 0 !important;
+    color: var(--text-gray) !important;
+} 
+
+th:nth-last-child(2), td:nth-last-child(2) {
+     padding: 18px 12px !important;
+}
