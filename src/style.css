@@ -454,7 +454,15 @@ footer {
 }
 
 .accordion-item {
-    border-bottom: 0;
+    border-width: 1.3px !important;
+    border-style: solid !important;
+    border-color:  #a5a5a549 !important;
+    margin: 10px 0;
+    border-radius: 5px !important;
+    overflow: hidden;
+    box-shadow:  1px 1px 3px 1px rgba(0, 0, 0, 0.034);
+    
+    
 }
 
 /* Contact */
