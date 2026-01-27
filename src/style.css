@@ -187,6 +187,7 @@ h4, p {
 }
 
 .swiper-wrapper {
+    max-height: 45vw;
     margin-bottom: 40px;
 }
 
