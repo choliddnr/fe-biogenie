@@ -525,3 +525,18 @@ th, td {
 th:nth-last-child(2), td:nth-last-child(2) {
      padding: 18px 12px !important;
 }
+
+/* Brand Partner Page */
+#certification-table td, #certification-table th {
+    padding: 6px 12px !important;
+}
+
+.dot {
+    display: inline-block;
+  width: 1rem !important;
+  height: 1rem !important;
+  background-color: var(--text-gray); /* soft gray like image */
+  border-radius: 50%;
+  flex-shrink: 0;
+    margin-right: 10px;
+}
