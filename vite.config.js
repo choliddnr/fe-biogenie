@@ -1,32 +1,33 @@
-
-import { resolve } from 'path'
-import { defineConfig } from 'vite'
+import { resolve } from "path";
+import { defineConfig } from "vite";
 
 export default defineConfig({
- //   root: resolve(__dirname, 'src'),
-//   publicDir: '../public',
+  //   root: resolve(__dirname, 'src'),
+  //   publicDir: '../public',
 
-//   base: './',
+  //   base: './',
 
   build: {
-    outDir: './dist',
+    outDir: "./dist",
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
-        about: resolve(__dirname, 'aboutus.html'),
-        product: resolve(__dirname, 'product.html'),
-        brandpartner: resolve(__dirname, 'brandpartner.html'),
+        main: resolve(__dirname, "index.html"),
+        about: resolve(__dirname, "aboutus.html"),
+        product: resolve(__dirname, "product.html"),
+        brandpartner: resolve(__dirname, "brandpartner.html"),
+        technology: resolve(__dirname, "technology.html"),
+        contact: resolve(__dirname, "contact.html"),
       },
     },
   },
 
   resolve: {
     alias: {
-      '~bootstrap': resolve(__dirname, 'node_modules/bootstrap'),
+      "~bootstrap": resolve(__dirname, "node_modules/bootstrap"),
     },
   },
-//   server: {
-//     port: 8080,
-//   },
-})
+  //   server: {
+  //     port: 8080,
+  //   },
+});
