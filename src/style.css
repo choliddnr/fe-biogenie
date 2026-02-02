@@ -81,6 +81,10 @@ p {
   color: var(--dark-green) !important;
 }
 
+.text-gray {
+  color: var(--text-gray) !important;
+}
+
 .btn-green {
   background-color: var(--dark-green);
   color: white;
@@ -530,10 +534,21 @@ td:nth-last-child(2) {
   padding: 6px 12px !important;
 }
 
-.dot {
+.dot-big {
   display: inline-block;
   width: 1rem !important;
   height: 1rem !important;
+  background-color: var(--text-gray); /* soft gray like image */
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+/*Technology Page  */
+.dot-small {
+  display: inline-block;
+  width: 0.5rem !important;
+  height: 0.5rem !important;
   background-color: var(--text-gray); /* soft gray like image */
   border-radius: 50%;
   flex-shrink: 0;
